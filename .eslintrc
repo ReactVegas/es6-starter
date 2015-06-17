@@ -1,0 +1,66 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "env": {
+    "browser": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "globals": {
+    "__DEV__": true
+  },
+  "rules": {
+    "strict": 0,
+    "no-shadow": 0,
+    "no-console": 0,
+    "no-alert": 0,
+    "no-underscore-dangle": 0,
+    "quotes": [2, "single"],
+    "space-after-keywords": [2, "always"],
+    "space-before-blocks": [2, "always"],
+    "new-cap": [2, {
+      "capIsNewExceptions": ["Create"]
+    }],
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 2,
+    "react/jsx-quotes": [2, "double"],
+    "react/jsx-no-undef": 2,
+    "react/jsx-sort-props": 0,
+    "react/jsx-sort-prop-types": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-multi-comp": 1,
+    "react/no-unknown-property": 2,
+    "react/prop-types": 2,
+    "react/self-closing-comp": 2,
+    "react/wrap-multilines": 2,
+    "react/sort-comp": [2, {
+      "order": [
+        "statics",
+        "lifecycle",
+        "render",
+        "render-helpers",
+        "handlers",
+        "everything-else"
+      ],
+      "groups": {
+        "statics": [
+          "propTypes",
+          "defaultProps",
+          "observe",
+          "state",
+          "constructor"
+        ],
+        "render-helpers": [
+          "/^render.+$/"
+        ],
+        "handlers": [
+          "/^handle.*$/"
+        ]
+      }
+    }]
+  }
+}
