@@ -19,9 +19,6 @@
     "quotes": [2, "single"],
     "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
-    "new-cap": [2, {
-      "capIsNewExceptions": ["Create"]
-    }],
     "react/display-name": 0,
     "react/jsx-boolean-value": 2,
     "react/jsx-quotes": [2, "double"],
