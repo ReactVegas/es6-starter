@@ -4,6 +4,10 @@ const config = {
   entry: [
     './src/main'
   ],
+  output: {
+    path: './public',
+    filename: 'bundle.js'
+  },
   module: {
     loaders: [
       {
