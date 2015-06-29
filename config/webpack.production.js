@@ -3,7 +3,7 @@
 import webpack from 'webpack';
 import defaultConfig from './webpack.default';
 
-const config = {
+export default {
   ...defaultConfig,
   devtool: 'source-map',
   plugins: [
@@ -12,5 +12,3 @@ const config = {
     })
   ]
 };
-
-export default config;

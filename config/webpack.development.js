@@ -4,7 +4,8 @@ import webpack from 'webpack';
 import defaultConfig from './webpack.default';
 
 const port = process.env.PORT || '8080';
-const config = {
+
+export default {
   ...defaultConfig,
   debug: true,
   devtool: 'eval',
@@ -17,5 +18,3 @@ const config = {
     './src/main'
   ]
 };
-
-export default config;

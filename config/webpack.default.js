@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-const config = {
+export default {
   entry: [
     './src/main'
   ],
@@ -24,5 +24,3 @@ const config = {
     hot: true
   }
 };
-
-export default config;

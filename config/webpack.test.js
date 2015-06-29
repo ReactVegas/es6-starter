@@ -2,9 +2,7 @@
 
 import defaultConfig from './webpack.default';
 
-const config = {
+export default {
   ...defaultConfig,
   devtool: 'inline-source-map'
 };
-
-export default config;
