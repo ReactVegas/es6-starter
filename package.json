@@ -17,6 +17,7 @@
     "babel-eslint": "^3.1.16",
     "babel-loader": "^5.1.4",
     "babel-plugin-react-require": "^1.0.2",
+    "babel-runtime": "^5.8.20",
     "chai": "^3.0.0",
     "eslint": "^0.23.0",
     "eslint-plugin-react": "^2.5.2",
