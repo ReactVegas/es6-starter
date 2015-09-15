@@ -1,5 +1,7 @@
 /* eslint-env node */
 
+import {resolve} from 'path';
+
 export default {
   entry: [
     './src/main'
@@ -15,6 +17,11 @@ export default {
         loaders: ['babel'],
         exclude: /node_modules/
       }
+    ]
+  },
+  resolve: {
+    root: [
+      resolve(__dirname, '..', 'src')
     ]
   },
   devServer: {
