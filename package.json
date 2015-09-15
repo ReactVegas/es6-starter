@@ -4,10 +4,10 @@
   "description": "",
   "main": "public/bundle.js",
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js",
-    "lint": "./node_modules/eslint/bin/eslint.js .",
-    "test": "./node_modules/karma/bin/karma start"
+    "start": "NODE_ENV=development webpack-dev-server",
+    "build": "NODE_ENV=production webpack",
+    "lint": "eslint .",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",
