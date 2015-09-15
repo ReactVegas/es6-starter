@@ -10,7 +10,8 @@ export default {
   debug: true,
   devtool: 'eval',
   plugins: [
-      new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:' + port,

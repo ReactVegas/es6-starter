@@ -1,9 +1,29 @@
 {
   "stage": 0,
-  "plugins": [
-    "react-require"
-  ],
   "optional": [
     "runtime"
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "react-require"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "react-transform",
+        "react-require"
+      ],
+      "extra": {
+        "react-transform": [{
+          "target": "react-transform-webpack-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }, {
+          "target": "react-transform-catch-errors",
+          "imports": ["react", "redbox-react"]
+        }]
+      }
+    }
+  }
 }
