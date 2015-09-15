@@ -4,16 +4,16 @@ import webpackConfig from './webpack.test';
 
 export default function(config) {
   return config.set({
-    frameworks: ['mocha', 'chai', 'sinon'],
+    frameworks: ['mocha'],
     webpack: webpackConfig,
     webpackMiddleware: {
       noInfo: true
     },
     preprocessors: {
-      'src/test.js': ['webpack', 'sourcemap']
+      'test/unit/main.js': ['webpack', 'sourcemap']
     },
     files: [
-      'src/test.js'
+      'test/unit/main.js'
     ]
   });
 }
