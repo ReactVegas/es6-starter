@@ -11,7 +11,12 @@ export default {
   devtool: 'eval',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('development')
+      }
+    })
   ],
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:' + port,
