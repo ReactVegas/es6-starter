@@ -1,6 +1,6 @@
 {
   "name": "es6-starter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "public/bundle.js",
   "scripts": {
@@ -33,7 +33,8 @@
     "mocha": "^2.2.5",
     "node-libs-browser": "^0.5.2",
     "phantomjs": "^1.9.17",
-    "react": "^0.13.3",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
     "react-transform-catch-errors": "^0.1.2",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.0.4",
