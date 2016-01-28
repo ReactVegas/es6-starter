@@ -1,6 +1,6 @@
-import chai from 'chai';
+import {config, assert} from 'chai';
 
-chai.config.includeStack = true;
-chai.config.truncateThreshold = false;
+config.includeStack = true;
+config.truncateThreshold = false;
 
-export default chai;
+export {assert};
