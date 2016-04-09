@@ -23,15 +23,13 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.4.3",
     "chai": "^3.0.0",
-    "enzyme": "^1.4.1",
+    "enzyme": "^2.2.0",
     "eslint": "^0.23.0",
     "eslint-plugin-react": "^2.5.2",
     "mocha": "^2.2.5",
     "node-libs-browser": "^0.5.2",
     "phantomjs": "^1.9.17",
-    "react": "^0.14.6",
-    "react-addons-test-utils": "^0.14.6",
-    "react-dom": "^0.14.2",
+    "react-addons-test-utils": "^15.0.1",
     "react-transform-catch-errors": "^1.0.1",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
@@ -39,5 +37,9 @@
     "webdriverio": "^3.2.3",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   }
 }
