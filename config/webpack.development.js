@@ -21,6 +21,6 @@ export default {
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:' + port,
     'webpack/hot/dev-server',
-    './src/main'
+    ...defaultConfig.entry
   ]
 };
