@@ -4,10 +4,10 @@ import {resolve} from 'path';
 
 export default {
   entry: [
-    './src/main'
+    'main'
   ],
   output: {
-    path: './public',
+    path: resolve(__dirname, 'public'),
     filename: 'bundle.js'
   },
   module: {
@@ -23,7 +23,7 @@ export default {
     ]
   },
   devServer: {
-    contentBase: './public',
+    contentBase: 'public',
     noInfo: true,
     inline: true,
     hot: true
