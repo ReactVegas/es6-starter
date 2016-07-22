@@ -5,7 +5,7 @@ import {resolve} from 'path';
 export default {
   entry: ['main'],
   output: {
-    path: resolve(__dirname, 'public'),
+    path: resolve(__dirname, '../public'),
     filename: 'bundle.js'
   },
   module: {
@@ -17,7 +17,7 @@ export default {
   },
   resolve: {
     root: [
-      resolve(__dirname, '..', 'src')
+      resolve(__dirname, '../src')
     ]
   },
   devServer: {
