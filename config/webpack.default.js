@@ -3,9 +3,7 @@
 import {resolve} from 'path';
 
 export default {
-  entry: [
-    'main'
-  ],
+  entry: ['main'],
   output: {
     path: resolve(__dirname, 'public'),
     filename: 'bundle.js'
